@@ -8,37 +8,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="display">000</div>
+      <div class="screen">
+        <div class="screen-last" id="lastOperationScreen"></div>
+        <div class="screen-current" id="currentOperationScreen"></div>
+      </div>
       <div class="keys">
         <div class="row">
-          <button type="button" class="key">C</button>
-          <button type="button" class="key">DEL</button>
+          <button type="button" class="key" id="clear">C</button>
+          <button type="button" class="key" id="delete">DEL</button>
         </div>
         <div class="row">
-          <button type="button" class="key">7</button>
-          <button type="button" class="key">8</button>
-          <button type="button" class="key">9</button>
-          <button type="button" class="key">/</button>
+          <button type="button" class="key number">7</button>
+          <button type="button" class="key number">8</button>
+          <button type="button" class="key number">9</button>
+          <button type="button" class="key operator">/</button>
         </div>
         <div class="row">
-          <button type="button" class="key">4</button>
-          <button type="button" class="key">5</button>
-          <button type="button" class="key">6</button>
-          <button type="button" class="key">*</button>
+          <button type="button" class="key number">4</button>
+          <button type="button" class="key number">5</button>
+          <button type="button" class="key number">6</button>
+          <button type="button" class="key operator">*</button>
         </div>
         <div class="row">
-          <button type="button" class="key">1</button>
-          <button type="button" class="key">2</button>
-          <button type="button" class="key">3</button>
-          <button type="button" class="key">-</button>
+          <button type="button" class="key number">1</button>
+          <button type="button" class="key number">2</button>
+          <button type="button" class="key number">3</button>
+          <button type="button" class="key operator">-</button>
         </div>
         <div class="row">
-          <button type="button" class="key">0</button>
+          <button type="button" class="key number">0</button>
           <button type="button" class="key">.</button>
-          <button type="button" class="key">=</button>
-          <button type="button" class="key">+</button>
+          <button type="button" class="key" id="equals">=</button>
+          <button type="button" class="key operator">+</button>
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

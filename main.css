@@ -30,12 +30,21 @@ body {
   gap: 5px;
 }
 
-.display {
+.screen {
   display: block;
   border: 1px solid black;
   width: 90%;
   text-align: right;
   font-family: "VT323", monospace;
+}
+
+.screen-last {
+  min-height: calc(1em);
+  font-size: larger;
+}
+
+.screen-current {
+  min-height: calc(1em);
   font-size: xx-large;
 }
 
